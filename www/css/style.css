@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+.titulo {
+    color: blueviolet;
+    font-size: 30px;
+    text-align: center;
+}
