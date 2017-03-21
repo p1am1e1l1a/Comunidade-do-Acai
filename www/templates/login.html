@@ -4,27 +4,20 @@
   <div class="list">
     <label class="item item-input item stacked-label">
       <span class="input-label">E-mail</span>
-      <input type="password" placeholder="">
+      <input type="password" placeholder="" ng-model="email">
     </label>
 
     <label class="item item-input item stacked-label">
       <span class="input-label">Senha</span>
-      <input type="password" placeholder="">
+      <input type="password" placeholder="" ng-model="email">
     </label>
       
    <div class="padding">
-      <button id="button" class="button button-outline button-block button-royal">
+      <button id="button" class="button button-outline button-block button-royal" ng-click="loginCadastrar(email, senha)">
       Cadastrar
       </button>
     </div>
-
-    <div class="padding">
-      <button id="button" class="button button-outline button-block button-royal">
-     Entrar com o facebook
-      </button>
-    </div>
-
-    </div>
+</div>
 
 
   </ion-content>

@@ -74,8 +74,46 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('configuracoes', {
+    url: '/configuracoes',
+    views: {
+      'view-inicial': {
+        templateUrl: 'templates/configuracoes.html'
+      }
+    }
+  })
 
 
+  .state('ajuda', {
+    url: '/ajuda',
+    views: {
+      'view-inicial': {
+        templateUrl: 'templates/ajuda.html'
+      }
+    }
+  })
+
+
+
+  .state('editarperfil', {
+    url: '/editarperfil',
+    views: {
+      'view-inicial': {
+        templateUrl: 'templates/editarperfil.html'
+      }
+    }
+  })
+
+  .state('foto', {
+    url: '/foto',
+    views: {
+      'view-inicial': {
+        templateUrl: 'templates/foto.html'
+      }
+    }
+  })
+
+  
 
   
   $urlRouterProvider.otherwise('/inicial');
