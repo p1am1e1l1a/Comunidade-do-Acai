@@ -9,21 +9,21 @@
 
   <label class="item item-input item-stacked-label">
     <span class="input-label">E-mail</span>
-    <input type="text" placeholder="E-mail">
+    <input type="text" placeholder="E-mail" ng-model="email">
   </label>
 
   <label class="item item-input item-stacked-label">
     <span class="input-label">Senha <i class="icon ion-eye-disabled"></i></span>
-    <input type="text" placeholder="Senha">
+    <input type="password" placeholder="Senha" ng-model="senha">
   </label>
 
   <div class="padding">
-    <button id="button" class="button button-outline button-block button-dark">
+    <button id="button" class="button button-outline button-block button-dark" ng-click="entrar(email, senha)">
       Entrar 
-      <i class="icon ion-android-checkbox"></i>
+      <i class="icon ion-android-checkbox" ></i>
     </button>
  
-  <button id="button" class="button button-outline button-block button-dark">
+  <button id="button" class="button button-outline button-block button-dark" ng-click="cadastrar(email, senha)">
     Novo Cadastro 
      <i class="icon ion-ios-compose"></i>
   </button>
