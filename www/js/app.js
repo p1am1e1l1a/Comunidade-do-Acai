@@ -96,11 +96,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 
 
-  .state('editarperfil', {
-    url: '/editarperfil',
+  .state('edit', {
+    url: '/edit',
     views: {
       'view-inicial': {
-        templateUrl: 'templates/editarperfil.html'
+        templateUrl: 'templates/edit.html'
       }
     }
   })
@@ -110,6 +110,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'view-inicial': {
         templateUrl: 'templates/foto.html'
+      }
+    }
+  })
+
+
+  .state('menu', {
+    url: '/menu',
+    views: {
+      'view-inicial': {
+        templateUrl: 'templates/menu.html'
       }
     }
   })
