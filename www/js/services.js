@@ -31,15 +31,15 @@ return {
         alert(errorMessage)
       });
     },
-      entrar: function (email, senha) {
+      entrar: function (email, senha, callback) {
         firebase.auth().signInWithEmailAndPassword(email, senha)
           .then(function() {
-            alert('funcionou');
+            callback()
           })
        .catch(function(error) {
           var errorCode = error.code;
           var errorMessage = error.message;
-          alert(errorMessage)
+          callback(errorMessage)
         })
       }
     }
