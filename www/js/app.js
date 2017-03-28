@@ -35,31 +35,39 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('login', {
-    url: '/login',
+  .state('menu', {
+    url: '/menu',
+    abstract: true,
     views: {
       'view-inicial': {
-        templateUrl: 'templates/login.html'
+        templateUrl: 'templates/menu.html'
       }
     }
   })
 
 
-
-  .state('tarefas', {
+  .state('menu.tarefas', {
     url: '/tarefas',
     views: {
-      'view-inicial': {
+      'view-menu': {
         templateUrl: 'templates/tarefas.html'
       }
     }
   })
 
+  .state('menu.configuracoes', {
+    url: '/configuracoes',
+    views: {
+      'view-menu': {
+        templateUrl: 'templates/configuracoes.html'
+      }
+    }
+  })
 
-    .state('chat', {
+    .state('menu.chat', {
     url: '/chat',
     views: {
-      'view-inicial': {
+      'view-menu': {
         templateUrl: 'templates/chat.html'
       }
     }
@@ -75,57 +83,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('configuracoes', {
-    url: '/configuracoes',
-    views: {
-      'view-inicial': {
-        templateUrl: 'templates/configuracoes.html'
-      }
-    }
-  })
 
-
-  .state('ajuda', {
+  .state('menu.ajuda', {
     url: '/ajuda',
     views: {
-      'view-inicial': {
+      'view-menu': {
         templateUrl: 'templates/ajuda.html'
       }
     }
   })
 
-
-
-  .state('edit', {
+  .state('menu.edit', {
     url: '/edit',
     views: {
-      'view-inicial': {
+      'view-menu': {
         templateUrl: 'templates/edit.html'
       }
     }
   })
 
-  .state('foto', {
+ /* .state('foto', {
     url: '/foto',
     views: {
       'view-inicial': {
         templateUrl: 'templates/foto.html'
       }
     }
-  })
-
-
-  .state('menu', {
-    url: '/menu',
-    views: {
-      'view-inicial': {
-        templateUrl: 'templates/menu.html'
-      }
-    }
-  })
-
-  
-
+  })*/
   
   $urlRouterProvider.otherwise('/inicial');
 
