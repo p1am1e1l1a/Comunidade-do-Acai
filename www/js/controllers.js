@@ -26,3 +26,16 @@ $scope.cadastrar = function(email, senha) {
    
   });
 })
+
+.controller('LocaisCtrl', function($scope, $cordovaGeolocation) {
+    $scope.locais = "";
+    $cordovaGeolocation
+    .getCurrentPosition()
+        .then(function (position) {
+        var lat  = position.coords.latitude
+        var long = position.coords.longitude
+        }, function(err) {
+        // error
+        });
+  
+});
