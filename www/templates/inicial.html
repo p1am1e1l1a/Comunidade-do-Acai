@@ -1,41 +1,45 @@
 <ion-view view-title="COMUNIDADE DO AÇAI">
-  <img src="https://static.wixstatic.com/media/f53f19_23089ab464d24d6cb0d15498b7d49600.jpg_srz_388_245_85_22_0.50_1.20_0.00_jpg_srz">
+
   <ion-content>
+    
+    <div class="tela-inicial">
+      <h1 class="titulo">
+        Comunidade do Açai <br>
+              O que<br>
+      Você procura está aqui!!
+      </h1>
+      <div class="list">
+        <label class="item item-input item-stacked-label input-label-login">
+          <span class="input-label">E-mail</span>
+          <input type="text" placeholder="E-mail" ng-model="email">
+        </label>
 
-  <h1 class="titulo">
-    Bem-vindos à comunidade do açai
+        <label class="item item-input item-stacked-label input-label-login">
+          <span class="input-label">Senha <i class="icon ion-eye-disabled"></i></span>
+          <input  type="password" placeholder="Senha" ng-model="senha">
+        </label>
+      </div>
+      
 
-  </h1>
+      <div class="padding">
+        <button id="button" class="button button-block button-tela-inicial" ng-click="entrar(email, senha)">
+          Entrar 
+          <i class="icon ion-android-checkbox" ></i>
+        </button>
+    
+        <button id="button" class="button button-block button-tela-inicial" ng-click="cadastrar(email, senha)">
+          Novo Cadastro 
+          <i class="icon ion-ios-compose"></i>
+        </button>
+        <button id="button" class="button button-block button-tela-inicial azul">
+          Entrar com o facebook
+          <i class="icon ion-social-facebook"></i>
+        </button>
+      </div>
+    </div>
 
 
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">E-mail</span>
-    <input type="text" placeholder="E-mail" ng-model="email">
-  </label>
-
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Senha <i class="icon ion-eye-disabled"></i></span>
-    <input type="password" placeholder="Senha" ng-model="senha">
-  </label>
-
-  <div class="padding">
-    <button id="button" class="button button-outline button-block button-dark" ng-click="entrar(email, senha)">
-      Entrar 
-      <i class="icon ion-android-checkbox" ></i>
-    </button>
- 
-  <button id="button" class="button button-outline button-block button-dark" ng-click="cadastrar(email, senha)">
-    Novo Cadastro 
-     <i class="icon ion-ios-compose"></i>
-  </button>
- <button id="button" class="button button-outline button-block button-dark">
-    Entrar com o facebook
-
- <i class="icon ion-social-facebook"></i>
-
-  </button>
-
- </div>
+  
 
   </ion-content>
 </ion-view>

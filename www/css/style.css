@@ -4,16 +4,39 @@
     box-sizing: border-box;
 }
 
-
-
 .titulo {
-    color: black;
+    color: white;
     font-size: 30px;
     text-align: center;
+    font-family: 'Spirax', cursive;
 }
 
 .titulo1 {
     color:white;
     font-size: 20px;
     text-align: center;
+}
+.tela-inicial {
+    background-image: url("../img/acaiimagem.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.button.button-tela-inicial {
+    background-color: rgba(255, 255, 255, .4);
+    border-color: transparent;
+    color: white;
+}
+
+.button.button-tela-inicial.azul {
+    background-color: rgba(100, 100, 255, .4);
+}
+.input-label{
+    color: white;
+}
+
+.input-label-login {
+    padding: 16px;
 }
