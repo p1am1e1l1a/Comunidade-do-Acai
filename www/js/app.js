@@ -83,10 +83,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
-   .state('online', {
+   .state('menu.online', {
     url: '/online',
     views: {
-      'view-inicial': {
+      'view-menu': {
         templateUrl: 'templates/online.html'
       }
     }
@@ -120,6 +120,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })*/
   
+  .state('menu.contatos', {
+    url: '/contatos',
+    views: {
+      'view-menu': {
+        templateUrl: 'templates/contatos.html'
+      }
+    }
+  })
+
+  .state('menu.coversas', {
+    url: '/coversas',
+    views: {
+      'view-menu': {
+        templateUrl: 'templates/coversas.html'
+      }
+    }
+  })
   $urlRouterProvider.otherwise('/inicial');
 
 });
