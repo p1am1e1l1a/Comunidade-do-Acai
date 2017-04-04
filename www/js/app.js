@@ -129,11 +129,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
-  .state('menu.coversas', {
-    url: '/coversas',
+  .state('menu.conversas', {
+    url: '/conversas',
     views: {
       'view-menu': {
-        templateUrl: 'templates/coversas.html'
+        templateUrl: 'templates/conversas.html'
       }
     }
   })

@@ -28,14 +28,32 @@ $scope.cadastrar = function(email, senha) {
 })
 
 .controller('LocaisCtrl', function($scope, $cordovaGeolocation) {
+    
     $scope.locais = "";
     $cordovaGeolocation
-    .getCurrentPosition()
-        .then(function (position) {
-        var lat  = position.coords.latitude
-        var long = position.coords.longitude
-        }, function(err) {
-        // error
-        });
+        .getCurrentPosition()
+            .then(function (position) {
+            var lat  = position.coords.latitude
+            var long = position.coords.longitude
+                
+            var map;
+            function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: lat, lng: long},
+                zoom: 8
+            });
+            }
+            initMap();
+            }, function(err) {
+                alert(err);
+            });
   
 });
+//AIzaSyCp1vhpfiXSGxvVH-8oIya3INShATg7EJA
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
