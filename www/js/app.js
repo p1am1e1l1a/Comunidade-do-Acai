@@ -83,6 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
+<<<<<<< HEAD
    .state('menu.online', {
     url: '/online',
     views: {
@@ -92,6 +93,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
+=======
+>>>>>>> 10545b03e5bd74d2b347faf6827442612e723f65
 
   .state('menu.ajuda', {
     url: '/ajuda',
@@ -120,6 +123,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })*/
   
+<<<<<<< HEAD
   .state('menu.contatos', {
     url: '/contatos',
     views: {
@@ -146,6 +150,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+=======
+>>>>>>> 10545b03e5bd74d2b347faf6827442612e723f65
   $urlRouterProvider.otherwise('/inicial');
 
 });

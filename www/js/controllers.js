@@ -17,8 +17,13 @@ $scope.cadastrar = function(email, senha) {
         });
    }
 })
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> 10545b03e5bd74d2b347faf6827442612e723f65
 .controller('TarefasCtrl', function($scope, Tarefas) {
   $scope.tarefas = "";
   Tarefas.entrar(function(valores) {
