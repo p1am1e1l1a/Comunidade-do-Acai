@@ -129,6 +129,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
+ .state('menu.grupo', {
+    url: '/grupo',
+    views: {
+      'view-menu': {
+        templateUrl: 'templates/grupo.html'
+      }
+    }
+  })
+
   .state('menu.conversas', {
     url: '/conversas',
     views: {
